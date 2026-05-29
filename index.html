@@ -1,91 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Character Counter</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <main>
+      <section class="card">
+        <div class="top-bar">
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="Character Counter Logo" />
 
-        <section class="card">
+            <span>Character Counter</span>
+          </div>
 
-            <div class="top-bar">
+          <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
 
-                <div class="logo">
-                    <img 
-                        src="./assets/images/logo.svg" alt="Character Counter Logo">
+        <h1>Analyze your text in real-time.</h1>
 
-                    <span>Character Counter</span>
-                </div>
+        <textarea placeholder="Start typing here..."></textarea>
 
-                <button class="menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-            </div>
-
-            <h1>
-                Analyze your text in real-time.
-            </h1>
-
-            <textarea placeholder="Start typing here..."></textarea>
-
-            <div class="controls-row">
-
-            <div class="controls-left">
-                <label class="checkbox-label">
-            <input type="checkbox" id="excludeSpaces">
-            <span class="custom-checkbox"></span>
-            Exclude Spaces</label>
+        <div class="controls-row">
+          <div class="controls-left">
+            <label class="checkbox-label">
+              <input type="checkbox" id="excludeSpaces" />
+              <span class="custom-checkbox"></span>
+              Exclude Spaces</label
+            >
 
             <label class="checkbox-label">
-            <input type="checkbox" id="setCharLimit">
-            <span class="custom-checkbox"></span>
-            Set Character Limit
-        </label>
+              <input type="checkbox" id="setCharLimit" />
+              <span class="custom-checkbox"></span>
+              Set Character Limit
+            </label>
 
-        <input 
-            type="number" 
-            id="charLimitInput" 
-            class="char-limit-input hidden" 
-            placeholder="e.g. 100" 
-            min="1">
+            <input
+              type="number"
+              id="charLimitInput"
+              class="char-limit-input hidden"
+              placeholder="e.g. 100"
+              min="1"
+            />
+          </div>
 
+          <div class="controls-right">
+            <span class="reading-time">Approx. reading time: &lt;1 minute</span>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="card--violet">
+            <img
+              src="./assets/images/image-card-violet.png"
+              alt=""
+              class="stat-card__bg"
+            />
+            <div class="stat-card__content">
+              <span class="card__number">278</span>
+              <span class="card__label">Total Characters</span>
+            </div>
+          </div>
+
+          <div class="card--orange">
+            <img
+              src="./assets/images/image-card-orange.png"
+              alt=""
+              class="stat-card__bg"
+            />
+            <div class="card__content">
+              <span class="card__number">39</span>
+              <span class="card__label">Word Count</span>
+            </div>
+          </div>
+
+          <div class="card--coral">
+            <img
+              src="./assets/images/image-card-coral.png"
+              alt=""
+              class="stat-card__bg"
+            />
+            <div class="card__content">
+              <span class="card__number">04</span>
+              <span class="card__label">Sentence Count</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="letter-section">
+          <h2 class="letter-title">Letter Density</h2>
+
+          <div class="bars-container">
+            <div class="bar-row">
+              <span class="bar__letter">E</span>
+              <div class="bar">
+                <div class="bar__fill" style="width: 16.06%"></div>
+              </div>
+              <span class="bar__value">40 (16.06%)</span>
             </div>
 
-    <div class="controls-right">
-        <span class="reading-time">Approx. reading time: &lt;1 minute</span>
-    </div>
+            <div class="bar-row">
+              <span class="bar__letter">I</span>
+              <div class="bar">
+                <div class="bar__fill" style="width: 11.65%"></div>
+              </div>
+              <span class="bar__value">29 (11.65%)</span>
+            </div>
 
-</div>
+            <div class="bar-row">
+              <span class="bar__letter">T</span>
+              <div class="bar">
+                <div class="bar__fill" style="width: 11.24%"></div>
+              </div>
+              <span class="bar__value">29 (11.24%)</span>
+            </div>
 
+            <div class="bar-row">
+              <span class="bar__letter">O</span>
+              <div class="bar">
+                <div class="bar__fill" style="width: 8.84%"></div>
+              </div>
+              <span class="bar__value">22 (8.84%)</span>
+            </div>
 
+            <div class="bar-row">
+              <span class="bar__letter">N</span>
+              <div class="bar">
+                <div class="bar__fill" style="width: 8.43%"></div>
+              </div>
+              <span class="bar__value">21 (8.43%)</span>
+            </div>
+          </div>
 
-        </section>
-
+          <button class="see-more-btn">
+            See more
+            <span class="see-more-icon">&#8964;</span>
+          </button>
+        </div>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>
