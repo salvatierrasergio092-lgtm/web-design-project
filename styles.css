@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: #1c1f2a;
+  --bg-card: #12131a;
+  --text-primary: #f2f2f7;
+  --text-secondary: #b4b7c9;
+  --card-violet: #c99dff;
+  --card-orange: #ffb21e;
+  --card-coral: #ff8a65;
+  --bar-fill: #d19bff;
+  --border: #2a2d3a;
+
+  --font-main: "Space Grotesk", sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: #ffffff;
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+}
+
+.logo span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.menu-btn {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 38px;
+  height: 38px;
+}
+
+.menu-btn span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+}
+
+.menu-btn:hover {
+  border-color: var(--card-violet);
+}
+
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  margin: 30px 28px 28px 28px;
+  color: var(--text-primary);
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  font-family: var(--font-main);
+  font-size: 15px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+textarea:focus {
+  border-color: transparent;
+  outline: 3px solid var(--card-violet);
+  outline-offset: 2px;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.controls-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.controls-right {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: var(--bg-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.2s;
+}
+
+.checkbox-label:hover .custom-checkbox {
+  border-color: var(--card-violet);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: var(--card-violet);
+  border-color: var(--card-violet);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox::after {
+  content: "✓";
+  font-size: 11px;
+  color: var(--bg-main);
+  font-weight: 700;
+}
+
+.char-limit-input {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px 10px;
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  font-size: 13px;
+  width: 90px;
+  outline: none;
+}
+
+.char-limit-input:focus {
+  border-color: var(--card-violet);
+}
+
+.hidden {
+  display: none;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: var(--bar-fill);
+  border-radius: 999px;
+}
+
+.bar-e {
+  width: 16.06%;
+}
+
+.bar-i {
+  width: 11.65%;
+}
+
+.bar-t {
+  width: 11.24%;
+}
+
+.bar-o {
+  width: 8.84%;
+}
+
+.bar-n {
+  width: 8.43%;
+}
