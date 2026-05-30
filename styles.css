@@ -110,7 +110,7 @@ textarea {
   font-family: var(--font-main);
   font-size: 15px;
   line-height: 1.6;
-  resize: vertical;
+  resize: none;
   outline: none;
   margin-bottom: 16px;
 }
@@ -235,24 +235,19 @@ textarea:focus {
 
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
 }
 
 .card__number {
-  font-size: 40px;
+  font-size: 55px;
   font-weight: 700;
   color: #12131a;
 }
 
 .card__label {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
   color: #12131a;
-}
-
-.bar-fill {
-  height: 100%;
-  background-color: var(--bar-fill);
-  border-radius: 999px;
 }
 
 .bar-e {
@@ -273,4 +268,78 @@ textarea:focus {
 
 .bar-n {
   width: 8.43%;
+}
+
+.letter-section {
+  margin-top: 8px;
+}
+
+.letter-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.bar__letter {
+  width: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.bar__value {
+  min-width: 90px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.bar {
+  flex: 1;
+  height: 12px;
+  background-color: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: var(--bar-fill);
+  border-radius: 999px;
+}
+
+.see-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: none;
+  border: none;
+
+  color: var(--text-primary);
+
+  font-family: var(--font-main);
+font-size: 16px;
+font-weight: 400;
+
+cursor: pointer;
+
+margin-top: 20px;
+transition: 0.2s;
+}
+
+.see-more-btn:hover {
+  opacity: 0.8;
+}
+
+.see-more-icon {
+  font-size: 14px;
+  position: relative;
+  top: -4px;
 }
