@@ -113,6 +113,7 @@ textarea {
   resize: none;
   outline: none;
   margin-bottom: 16px;
+  text-transform: capitalize;
 }
 
 textarea:focus {
@@ -244,13 +245,13 @@ textarea:focus {
 .card__number {
   font-size: 55px;
   font-weight: 700;
-  color: #12131a;
+  color: var(--bg-card);
 }
 
 .card__label {
   font-size: 15px;
   font-weight: 500;
-  color: #12131a;
+  color: var(--bg-card);
 }
 
 .bar-e {
