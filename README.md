@@ -84,3 +84,13 @@ Todo lo fui resolviendo con práctica y comparando con el diseño original.
 Fue la primera vez que trabajé con commits de forma progresiva y fue todo un aprendizaje en sí mismo.
 
 Siendo autocrítico, los primeros commits fueron algo desordenados, todavía estaba encontrando el ritmo. Pero a medida que avancé creo que los mensajes se fueron volviendo más claros y descriptivos. Es algo natural cuando uno está empezando, y estoy seguro de que con la práctica va a ir saliendo cada vez mejor, al igual que el proyecto en sí.
+
+## Capturas del proyecto
+
+### Vista escritorio
+![Vista escritorio](./assets/screenshots/desktop.png)
+
+## Autor
+
+**Sergio Salvatierra**  
+Estudiante de la Diplomatura de Programación Web FullStack — 2026
